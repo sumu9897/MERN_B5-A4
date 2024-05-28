@@ -1,6 +1,0 @@
-1. npm init --y --> Package.json --> Back-End
-2. app.js --> Backend Config
-3. index.js --> Complete Project Run
-4. src --> Back-End --> controller/middleware/utility
-5. ( npm create vite@latest ) client --> Front-End -->react
-6. app.js --> Structure
