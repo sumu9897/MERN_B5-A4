@@ -54,6 +54,13 @@ router.get('/CreateInvoice',AuthVerification,InvoiceController.CreateInvoice)
 
 
 
+
+
+
+
+
+
+
 router.get('/InvoiceList',AuthVerification,InvoiceController.InvoiceList)
 router.get('/InvoiceProductList/:invoice_id',AuthVerification,InvoiceController.InvoiceProductList)
 

@@ -1,6 +1,5 @@
 const mongoose=require('mongoose');
-
-const DataSchema = mongoose.Schema({
+const DataSchema=mongoose.Schema({
         title:{type:String,required:true},
         shortDes:{type:String,required:true},
         price:{type:String,required:true},
@@ -12,11 +11,8 @@ const DataSchema = mongoose.Schema({
         remark:{type:String,required:true},
         categoryID:{type:mongoose.Schema.Types.ObjectId,required:true},
         brandID:{type:mongoose.Schema.Types.ObjectId,required:true}
-
     },
-    {timestamps: true,versionKey:false}
+    {timestamps:true,versionKey:false}
 )
-
 const ProductModel=mongoose.model('products',DataSchema)
-
-module.exports = ProductModel;
+module.exports=ProductModel

@@ -1,6 +1,5 @@
 const mongoose=require('mongoose');
-
-const DataSchema = mongoose.Schema({
+const DataSchema=mongoose.Schema({
         userID:{type:mongoose.Schema.Types.ObjectId,required:true},
         cus_add:{type:String},
         cus_city:{type:String},
@@ -18,9 +17,7 @@ const DataSchema = mongoose.Schema({
         ship_postcode:{type:String},
         ship_state:{type:String},
     },
-    {timestamps: true,versionKey:false}
+    {timestamps:true,versionKey:false}
 )
-
 const ProfileModel=mongoose.model('profiles',DataSchema)
-
-module.exports = ProfileModel;
+module.exports=ProfileModel

@@ -1,6 +1,5 @@
 const mongoose=require('mongoose');
-
-const DataSchema = mongoose.Schema({
+const DataSchema=mongoose.Schema({
         userID:{type:mongoose.Schema.Types.ObjectId,required:true},
         productID:{type:mongoose.Schema.Types.ObjectId,required:true},
         invoiceID:{type:mongoose.Schema.Types.ObjectId,required:true},
@@ -8,12 +7,8 @@ const DataSchema = mongoose.Schema({
         price:{type:String,required:true},
         color:{type:String,required:true},
         size:{type:String,required:true},
-
-
     },
-    {timestamps: true,versionKey:false}
+    {timestamps:true,versionKey:false}
 )
-
 const InvoiceProductModel=mongoose.model('invoiceproducts',DataSchema)
-
-module.exports = InvoiceProductModel;
+module.exports=InvoiceProductModel
